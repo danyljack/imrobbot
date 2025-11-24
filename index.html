@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMROBBOT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="IMROBBOT">IMROBBOT</h1>
+        </header>
+        <main>
+            <div class="robot-container">
+                <img src="robot_cute.png" alt="Pixel Robot" class="pixel-art">
+            </div>
+            <div class="terminal">
+                <p id="typewriter"></p>
+                <span class="cursor">_</span>
+            </div>
+        </main>
+
+        <div id="start-overlay" class="overlay">
+            <div class="overlay-content">
+                <p>CLICK TO START SYSTEM</p>
+                <p class="blink">_</p>
+            </div>
+        </div>
+
+        <div id="virus-popup" class="popup hidden">
+            <div class="popup-header">
+                <span>CRITICAL ERROR</span>
+                <button class="close-btn">X</button>
+            </div>
+            <div class="popup-content">
+                <p>WARNING: VIRUS DETECTED!</p>
+                <p>YOUR SYSTEM IS INFECTED.</p>
+                <button id="fix-btn">CLICK TO FIX</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 IMROBBOT SYSTEMS</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
